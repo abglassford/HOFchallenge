@@ -4,8 +4,8 @@ console.log(any([8, 9, 10, 11], greaterThan10)); //[false, false, false, true]
 console.log(surprise('surprise')('!')); //'surprise!'
 console.log(onlyOdd(3)); //3
 console.log(onlyOdd(2)); //false
-console.log(filter([ 1, 2, 3, 4 ], onlyOdd));
-console.log(sumTwoNumbers(3)(9));
+console.log(filter([ 1, 2, 3, 4 ], onlyOdd)); //[1, 3]
+console.log(sumTwoNumbers(3)(9)); //12
 
 
 function greaterThan10(num){
