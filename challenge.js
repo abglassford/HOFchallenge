@@ -5,6 +5,7 @@ console.log(surprise('surprise')('!')); //'surprise!'
 console.log(onlyOdd(3)); //3
 console.log(onlyOdd(2)); //false
 console.log(filter([ 1, 2, 3, 4 ], onlyOdd));
+console.log(sumTwoNumbers(3)(9));
 
 
 function greaterThan10(num){
@@ -45,4 +46,10 @@ function filter(nums, onlyOddFn){
     }
   }
   return oddArr
+}
+
+function sumTwoNumbers(num1){
+  return function(num2){
+    return num1 + num2
+  }
 }
