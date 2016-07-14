@@ -17,11 +17,12 @@ function greaterThan10(num){
 }
 
 function any(nums, greaterThan10Fn){
-  var result = []
   for(var i = 0; i < nums.length; i++){
-    result.push(greaterThan10Fn(nums[i]))
+    if(greaterThan10Fn(nums[i])){
+    return true
+    }
   }
-  return result;
+return false;
 }
 
 function surprise(word){
